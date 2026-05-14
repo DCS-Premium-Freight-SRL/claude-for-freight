@@ -3,8 +3,8 @@
 A suite of plugins for freight forwarding workflows — air, sea, road, rail, and time-critical.
 
 > Maintained by **DCS Premium Freight SRL** (Bucharest, Romania) — a neutral freight forwarder
-> running these patterns in production every day across 13 DHL Express network contracts,
-> automotive logistics for Stellantis, and time-critical operations for retail and pharma clients.
+> specialized in time-critical, multimodal, and automotive logistics across the EU,
+> MEA, and Asia-Pacific corridors. These patterns run daily on real shipments at our operational desk.
 
 This is the pattern. Fork it, run the cold-start interview against your own playbook,
 keep what works, throw out the rest.
@@ -44,7 +44,7 @@ charter / dangerous goods / OBC shipment) — see [`docs/authority-matrix.md`](d
 | [`obc-nfo`](obc-nfo/) | v0.x 🚧 | On-Board Courier / Next Flight Out — passport pool, visa risk, route ladder |
 | [`air-charter`](air-charter/) | v0.x 🚧 | Full and part charter — broker comms, post-flight cost recovery, GHA dispute |
 | [`dangerous-goods`](dangerous-goods/) | v0.x 🚧 | IATA DGR / ADR / IMDG — UN number lookup, packing instruction, DGD draft |
-| [`automotive-logistics`](automotive-logistics/) | v0.x 🚧 | OEM/Tier-1 — Stellantis MMOG/LE, line-stop response, milk run, MAS-Loop |
+| [`automotive-logistics`](automotive-logistics/) | v0.x 🚧 | OEM/Tier-1 supplier workflows — MMOG/LE, line-stop response, milk run, MAS-Loop |
 | [`ocean-freight`](ocean-freight/) | v0.x 🚧 | FCL/LCL — booking, B/L draft, demurrage tracker, ETA reconciliation |
 | [`road-transport`](road-transport/) | v0.x 🚧 | EU groupage and FTL — CMR, e-Transport RO, cabotage rules |
 | [`cold-chain`](cold-chain/) | v0.x 🚧 | Pharma / perishables — GDP, IATA CEIV, temperature excursion playbook |

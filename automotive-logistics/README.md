@@ -1,6 +1,6 @@
 # automotive-logistics
 
-*OEM and Tier-1 supplier workflows — Stellantis MMOG/LE, line-stop response, milk-run optimization, MAS-Loop coordination, AS9100/IATF16949 documentation.*
+*OEM and Tier-1 supplier workflows — MMOG/LE, line-stop response, milk-run optimization, MAS-Loop coordination, AS9100/IATF16949 documentation.*
 
 > **Status: v0.x — roadmap stub.** Skills listed here are planned; some are
 > in development at DCS Premium Freight, others are open for community

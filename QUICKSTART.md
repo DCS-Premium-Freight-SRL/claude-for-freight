@@ -20,7 +20,7 @@ Those plug in later through `connectors/`.
 ## 1. Clone the repo
 
 ```bash
-git clone https://github.com/dcs-freight/claude-for-freight.git
+git clone https://github.com/DCS-Premium-Freight-SRL/claude-for-freight.git
 cd claude-for-freight
 ```
 

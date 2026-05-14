@@ -1,0 +1,42 @@
+# Plugin practice profiles — local config, not for the public repo
+**/CLAUDE.local.md
+**/freight.local.md
+
+# Operator's actual rate sheets, customer lists, agent profiles —
+# these belong on your machine, not in this repo
+**/rate-cards/
+**/customer-data/
+**/agent-network/
+**/.env
+**/.env.local
+
+# Claude Code state
+.claude/
+**/.claude-history
+
+# Common editor cruft
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Python (for any Pattern B scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# Node (for any tooling)
+node_modules/
+npm-debug.log*
+
+# Outputs
+/out/
+/tmp/
+*.log

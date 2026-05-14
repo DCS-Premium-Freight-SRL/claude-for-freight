@@ -1,0 +1,53 @@
+{
+  "name": "freight-forwarding",
+  "version": "1.0.0",
+  "description": "General multi-modal freight forwarding plugin — RFQ drafting, cargo calculation, transport documents (CMR/AWB/HBL/MBL), customs checklist. Bilingual EN/RO. Built for desk operators at a neutral forwarder running air, sea, road, and rail across EU and worldwide.",
+  "author": {
+    "name": "DCS Premium Freight SRL",
+    "url": "https://premiumfreight.ro"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/dcs-freight/claude-for-freight",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dcs-freight/claude-for-freight.git",
+    "directory": "freight-forwarding"
+  },
+  "keywords": [
+    "freight",
+    "forwarding",
+    "logistics",
+    "rfq",
+    "cargo-calculation",
+    "cmr",
+    "awb",
+    "customs",
+    "iata",
+    "incoterms",
+    "multimodal",
+    "ro",
+    "eu"
+  ],
+  "commands": [
+    "cold-start-interview",
+    "cargo-calc",
+    "rfq-draft",
+    "transport-doc",
+    "customs-checklist"
+  ],
+  "skills": [
+    "rfq-drafting",
+    "cargo-calculation",
+    "transport-documents",
+    "customs-checklist"
+  ],
+  "agents": [
+    "rfq-inbox-watcher"
+  ],
+  "requires": {
+    "claude-code": ">=2.0.0",
+    "cowork": ">=1.0.0"
+  },
+  "configFile": "CLAUDE.md",
+  "configPath": "~/.claude/plugins/config/claude-for-freight/freight-forwarding/CLAUDE.md"
+}

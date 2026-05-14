@@ -1,0 +1,53 @@
+{
+  "mcpServers": {
+    "gmail": {
+      "description": "Read inbound RFQ threads, draft outbound RFQ replies as Gmail drafts. Used by rfq-drafting and rfq-inbox-watcher.",
+      "transport": "http",
+      "url": "https://gmailmcp.googleapis.com/mcp/v1",
+      "scope": "user",
+      "required": false,
+      "fallback": "Render output as plain text; operator copy-pastes."
+    },
+    "google-drive": {
+      "description": "Save generated transport documents into the shipment folder structure. Used by transport-documents.",
+      "transport": "http",
+      "url": "https://drivemcp.googleapis.com/mcp/v1",
+      "scope": "user",
+      "required": false,
+      "fallback": "Output document as .docx/.pdf attachment in chat; operator saves manually."
+    },
+    "google-calendar": {
+      "description": "Block calendar slots for pickup windows, delivery appointments, charter ETD/ETA milestones.",
+      "transport": "http",
+      "url": "https://calendarmcp.googleapis.com/mcp/v1",
+      "scope": "user",
+      "required": false,
+      "fallback": "Output the calendar entry as text; operator adds manually."
+    },
+    "outlook": {
+      "description": "Same as gmail, for Microsoft 365 operators.",
+      "transport": "http",
+      "url": "https://outlookmcp.microsoft.com/mcp/v1",
+      "scope": "user",
+      "required": false,
+      "fallback": "Render output as plain text; operator copy-pastes."
+    },
+    "cargo-one": {
+      "description": "Live air-freight rate lookup. Used by rfq-drafting when an outbound rate is requested. Vendor-specific MCP server; see connectors/cargo-one/ for setup.",
+      "transport": "http",
+      "url": "REPLACE_WITH_YOUR_CARGO_ONE_MCP_URL",
+      "scope": "user",
+      "required": false,
+      "fallback": "Skill skips rate suggestion; operator pulls rate manually."
+    },
+    "cargowise": {
+      "description": "TMS read-only — pull shipment master data, check booking status, log new shipments after booking confirmation. See connectors/cargowise/ for setup.",
+      "transport": "http",
+      "url": "REPLACE_WITH_YOUR_CARGOWISE_MCP_URL",
+      "scope": "project",
+      "required": false,
+      "fallback": "Skill outputs the booking confirmation as a draft; operator enters into TMS manually."
+    }
+  },
+  "notes": "All connectors are optional. The plugin works without any of them — output falls back to text the operator can paste. Recommended baseline for desk operators: gmail (or outlook) + google-drive. Add cargo-one or cargowise once the baseline is stable."
+}
